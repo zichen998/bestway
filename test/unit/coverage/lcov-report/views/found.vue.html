@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for views/found.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">views</a> found.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/2</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div style="padding-bottom: 100px;"&gt;
+    &lt;div class="function-con-new"&gt;
+      &lt;p class="function-h-new gradient2 pdl-20"&gt;Nearby attractions&lt;/p&gt;
+      &lt;section class="comment-block mgt-20"&gt;
+        &lt;div class="comment-user"&gt;
+          &lt;div class="u-head"&gt;&lt;/div&gt;
+          &lt;span class="u-name"&gt;13112342222&lt;/span&gt;
+          &lt;span class="u-tag"&gt;Recommend&lt;/span&gt;
+          &lt;p class="u-date"&gt;
+            &lt;span class="u-date-l"&gt;2018.9.18  18:00:00&lt;/span&gt;
+            &lt;span class="u-class"&gt;Boutique&lt;/span&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="comment-con"&gt;
+          &lt;p class="comment-h"&gt;Hulunbeier Prairie&lt;/p&gt;
+          &lt;p class="comment-m mgt-20"&gt;What do you know about the mysterious Hulunbuir Prairie?&lt;/p&gt;
+          &lt;div class="p-con mgt-30"&gt;
+            &lt;div class="p-con-b"&gt;
+              &lt;img src="../assets/images/p-1.jpeg" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="p-con-b mgl-15"&gt;
+              &lt;img src="../assets/images/p-2.jpeg" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="p-con-b mgl-15"&gt;
+              &lt;img src="../assets/images/p-3.jpeg" alt=""&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="comment-b"&gt;
+          &lt;div class="comment-data mgt-20"&gt;
+            &lt;img src="../assets/images/map-new.png" alt=""&gt;
+              Go here
+            &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class="comment-block mgt-20"&gt;
+        &lt;div class="comment-user"&gt;
+          &lt;div class="u-head"&gt;&lt;/div&gt;
+          &lt;span class="u-name"&gt;13112342222&lt;/span&gt;
+          &lt;span class="u-tag"&gt;Recommend&lt;/span&gt;
+          &lt;p class="u-date"&gt;
+            &lt;span class="u-date-l"&gt;2018.9.18  18:00:00&lt;/span&gt;
+            &lt;span class="u-class"&gt;Boutique&lt;/span&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="comment-con"&gt;
+          &lt;p class="comment-h"&gt;Summer Palace&lt;/p&gt;
+          &lt;p class="comment-m mgt-20"&gt;The magnificent palace of the Chinese emperor&lt;/p&gt;
+          &lt;div class="p-con mgt-30"&gt;
+            &lt;div class="p-con-b"&gt;
+              &lt;img src="../assets/images/p-1.jpeg" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="p-con-b mgl-15"&gt;
+              &lt;img src="../assets/images/p-2.jpeg" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="p-con-b mgl-15"&gt;
+              &lt;img src="../assets/images/p-3.jpeg" alt=""&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="comment-b"&gt;
+          &lt;div class="comment-data mgt-20"&gt;
+            &lt;img src="../assets/images/map-new.png" alt=""&gt;
+              Go here
+            &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/section&gt;
+      &lt;section class="comment-block mgt-20"&gt;
+        &lt;div class="comment-user"&gt;
+          &lt;div class="u-head"&gt;&lt;/div&gt;
+          &lt;span class="u-name"&gt;13112342222&lt;/span&gt;
+          &lt;span class="u-tag"&gt;Recommend&lt;/span&gt;
+          &lt;p class="u-date"&gt;
+            &lt;span class="u-date-l"&gt;2018.9.18  18:00:00&lt;/span&gt;
+            &lt;span class="u-class"&gt;Boutique&lt;/span&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="comment-con"&gt;
+          &lt;p class="comment-h"&gt;Great Wall&lt;/p&gt;
+          &lt;p class="comment-m mgt-20"&gt;This is an ancient miracle&lt;/p&gt;
+          &lt;div class="p-con mgt-30"&gt;
+            &lt;div class="p-con-b"&gt;
+              &lt;img src="../assets/images/p-1.jpeg" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="p-con-b mgl-15"&gt;
+              &lt;img src="../assets/images/p-2.jpeg" alt=""&gt;
+            &lt;/div&gt;
+            &lt;div class="p-con-b mgl-15"&gt;
+              &lt;img src="../assets/images/p-3.jpeg" alt=""&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="comment-b"&gt;
+          &lt;div class="comment-data mgt-20"&gt;
+            &lt;img src="../assets/images/map-new.png" alt=""&gt;
+              Go here
+            &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;footerNav :tagFooter="footerVal"&gt;&lt;/footerNav&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+// import art from '../components/art'
+<span class="cstat-no" title="statement not covered" >import footerNav from '../components/footer-nav'</span>
+&nbsp;
+export default {
+  name: 'found',
+  components: {
+    footerNav
+  },
+<span class="fstat-no" title="function not covered" >  data () {</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      msg: '',
+      footerVal: 1
+    }
+  }
+}
+&nbsp;
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 11 2019 14:49:41 GMT+0800 (China Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
